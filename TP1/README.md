@@ -44,5 +44,5 @@ A partir de um dataset com reparações, é criada uma página principal com um 
  ## Como executar
 
 ```bash
-python3 json2html.py
+python3 script.py
 ```
