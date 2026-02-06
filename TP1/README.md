@@ -1,18 +1,17 @@
-# Metainformação
-> **Título:** TP1 - Oficina automóvel
-> **Data:** 06/02/2026
-> **Autor:** Juliana Silva
-> **UC:** Engenharia Web
+## Metainformação
+> **Título:** TP1 - Oficina automóvel <br>
+> **Data:** 06/02/2026 <br>
+> **Autor:** Juliana Silva <br>
+> **UC:** Engenharia Web 2025/26
 
-Repositório dedicado aos TPC realizados ao longo do semestre no âmbito da UC de Engenharia Web (2025/2026)
 
 ## Autor
-> **ID:** A105572
-> **Nome:** Juliana Silva
+> **ID:** A105572 <br>
+> **Nome:** Juliana Silva <br>
 ![foto](ju.jpeg)
 
-## Res
-A partir de um dataset com reparações, é criada uma página principal que encaminha para:
+## Resumo
+A partir de um dataset com reparações, é criada uma página principal com um índice para:
 - Página de reparações:
     - Data
     - NIF
@@ -32,13 +31,15 @@ A partir de um dataset com reparações, é criada uma página principal que enc
     - Lista de reparações associadas
 
 ## Resultados
-- [json2html](./json2html.py) - Ficheiro que fera as páginas
-- [dataset](./dataset_reparacoes.json) - Dataset de reparações
-- [index](./output/index.html) - Página principal que reencaminha para as diversas listagens (reparações, intervenções e viaturas)
-- [reparacoes](./output/pag_reparacoes.html) - Página com a lista de todas as reparações
-- [intervencoes](./output/pag_intervencoes.html) - Página com a lista de todos os tipos de intervenções
-- [reparacoes](./output/pag_marcas_modelos.html) - Página com a lista de todos as marcas/modelos de carros
-- páginas de cada reparação, intervenção e modelo com informações relativas a cada um.
+- [Script](./script.py) - Script em python para gerar as páginas HTML a partir do dataset JSON
+- [Dataset](./dataset_reparacoes.json) - Dataset de reparações numa oficina automóvel em formato JSON 
+
+### Output gerado
+- [index](./output/index.html) - Página principal com um índice para as listagens (reparações, intervenções e viaturas)
+- [reparacoes](./output/pag_reparacoes.html) - Página com a listagem de todas as reparações, com links para as páginas individuais de cada reparação
+- [intervencoes](./output/pag_intervencoes.html) - Página com a listagem de todos os tipos de intervenções, com links para as páginas individuais de cada intervenção
+- [reparacoes](./output/pag_marcas_modelos.html) - Página com a listagem de todas as marcas/modelos de carros, com links para as páginas individuais de cada marca/modelo
+- páginas individuais de cada reparação, intervenção e modelo com informações relativas a cada um.
 
  ## Como executar
 
