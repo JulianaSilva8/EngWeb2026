@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-teal
+      h1 Página EMD
+    
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        each t in list 
+          tr
+            th= t.primeiro_nome + " " + t.sobrenome
+          tr
+            td= t.data
+          tr
+            td= t.idade
+          tr 
+            td= t.genero
+          tr
+            td= t.morada
+          tr
+            td= t.modalidade
+          tr
+            td= t.clube 
+          tr
+            td= t.email 
+          tr
+            td= t.federado ? 'Federado: ✅' : 'Federado: ❌'
+          tr
+            td= t.resultado ? 'Resultado: ✅' : 'Resultado: ❌'
+
+      a.w3-button.w3-teal.w3-margin-top(href='/') Voltar

@@ -1,0 +1,59 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-teal
+      h1 Estatísticas
+
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr.w3-teal
+            th Géneros 
+            th Nr de Registos 
+        each num, gen in stats.genero 
+            tr
+               td= gen
+               td= num
+
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr.w3-teal
+            th Modalidades 
+            th Nr de Registos 
+        each num, mod in stats.modalidade 
+            tr
+               td= mod
+               td= num
+    
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr.w3-teal
+            th Clubes 
+            th Nr de Registos 
+        each num, club in stats.clube 
+            tr
+               td= club
+               td= num
+
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr.w3-teal
+            th Resultados 
+            th Nr de Registos 
+        each num, res in stats.resultado 
+            tr
+               td= res
+               td= num
+
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr.w3-teal
+            th Federados 
+            th Nr de Registos 
+        each num, fed in stats.federado 
+            tr
+               td= fed
+               td= num
+
+    a.w3-button.w3-teal.w3-margin-left.w3-margin-bottom.w3-margin-top(href="/emd") Voltar
+    
