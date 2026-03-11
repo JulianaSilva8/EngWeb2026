@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-indigo
+      h1 Página do Filme #{filme.title}
+    
+    .w3-container
+      table.w3-table-all.w3-margin-top
+        tr
+          th Nome 
+          td= filme.title
+        tr
+          th Ano
+          td= filme.year
+        tr 
+          th Elenco
+          td= filme.cast ? filme.cast.join(', ') : 'N/A'
+        tr 
+          th Géneros
+          td= filme.genres ? filme.genres.join(', ') : 'N/A'
+          
+      a.w3-button.w3-indigo.w3-margin-top.w3-margin-bottom(href='/filmes') Voltar
